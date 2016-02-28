@@ -1,0 +1,58 @@
+
+
+    <div class="form-box">
+    <form data-toggle="validator" role="form" method="POST" action="/register_user">
+    <div class="form-group">
+      <label for="inputName" class="control-label">Name</label>
+      <input type="text" class="form-control" name="name"  required>
+    </div>
+
+
+    <div class="form-group">
+      <label for="inputName" class="control-label">Username</label>
+      <input type="text" class="form-control" name="username"  required>
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="inputName" class="control-label">USN</label>
+      <input type="text" class="form-control" name="username"  required>
+    </div>
+
+    <div class="form-group">
+      <label for="inputEmail" class="control-label">Email</label>
+      <input type="email" class="form-control" name="emailBox" id="inputEmail" placeholder="Eg. xxx@yyy.zzz" data-error="That email address is invalid" required>
+      <div class="help-block with-errors"></div>
+    </div>
+
+
+      <div class="form-group ">
+        <label for="inputPassword" class="control-label">Password</label>
+        <div class="form-group">
+          <input type="password" data-minlength="6" name="passwordBox" class="form-control" id="inputPassword" placeholder="Password" required>
+          <span class="help-block">Minimum of 6 characters</span>
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+          <div class="help-block with-errors"></div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+  </form>
+  </div>
+
+
+
+

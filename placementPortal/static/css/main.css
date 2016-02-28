@@ -1,0 +1,49 @@
+.form-box{
+    width:50%;
+    background-color: #fefcff;
+    padding: 2em;
+    margin:1em auto;
+    border: 2px solid rgba(0,0,0,0.75);;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+header{
+    background-color: #202020;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    padding:2em;
+}
+#footer{
+    margin-top:8em;
+}
+
+#content{
+    margin-top: 10em;
+
+}
+#container{
+    margin-bottom: 10em;
+}
+
+#footer{
+    background-color: #202020;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    padding:2em;
+}
+
+
+
+.combobox{
+    padding-top:0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right:1em;
+    background-color: #fefcff;
+    margin-left: 0.3em;
+
+}

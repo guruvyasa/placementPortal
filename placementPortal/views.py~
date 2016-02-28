@@ -1,0 +1,17 @@
+from flask import Flask, render_template, redirect
+app = Flask(__name__)
+
+@app.route('/complaint_register', methods=['POST','GET'])
+def complaint_register():
+    # complaint_types =
+    if request.method == 'POST':
+        register_complain(request)
+        redirect('/')
+    elif request.method == 'GET':
+        render_template('complaintRegister.html', complaint_types=['Water', 'Road', 'Electricity', 'Waste Management', 'Stray Animals','Drainage', 'Gardens'])
+
+@app.route('/')
+def home_page():
+    return "welcome to complaint register"
+
+

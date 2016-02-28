@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
+    <title>{% block title %}{% endblock %} - Placement Portal</title>
+    {% endblock %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-combobox.css')}}">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/complaintRegister.css')}}"> -->
+
+</head>
+<body>
+    <header>
+        <div>Welcome to KLEIT placement portal</div>
+    </header>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2016 by <a href="#">placement portal</a>.
+        {% endblock %}
+    </div>
+      {% block scripts %}
+  <script src="{{ url_for('static', filename='js/lib/jquery-2.2.0.min.js')}}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/lib/bootstrap.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/lib/validator.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/lib/bootstrap-combobox.js')}}"></script>
+
+  {% endblock %}
+</body>
+</html>
